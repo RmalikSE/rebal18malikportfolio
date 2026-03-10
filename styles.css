@@ -125,16 +125,14 @@ border-radius:12px;
 transition:.3s;
 }
 
-/* TEXT NORMAL */
+/* NORMAL TEXT INSIDE BOX */
 
-#experience-projects .card h3,
-#experience-projects .card p,
-#experience-projects .card a{
+#experience-projects .card *{
 color:white;
 transition:.3s;
 }
 
-/* HOVER BOX EFFECT */
+/* BOX HOVER */
 
 #experience-projects .card:hover{
 transform:translateY(-5px) scale(1.02);
@@ -143,16 +141,14 @@ box-shadow:0 0 20px white;
 cursor:pointer;
 }
 
-/* GLOW ALL TEXT WHEN HOVERING BOX */
+/* EVERY WORD GLOWS WHEN HOVERING */
 
-#experience-projects .card:hover h3,
-#experience-projects .card:hover p,
-#experience-projects .card:hover a{
+#experience-projects .card:hover *{
 text-shadow:
-0 0 8px red,
-0 0 16px red,
-0 0 28px red,
-0 0 40px red;
+0 0 6px red,
+0 0 12px red,
+0 0 20px red,
+0 0 35px red;
 }
 
 /* PROJECT BUTTON */
@@ -261,7 +257,6 @@ box-shadow:0 0 10px red;
 @media(max-width:768px){
 
 .navbar{display:none;}
-
 .cursor-dot,.cursor-ring{display:none;}
 
 #hero{
